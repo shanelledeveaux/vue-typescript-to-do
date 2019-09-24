@@ -1,4 +1,10 @@
-<form @submit.prevent="emitTask">
+<form @submit.prevent="emitTask" class="form">
     <input type="text" placeholder="Enter task..." v-model="task">
+    <select v-model="priority">
+        <option disabled value="">Please select one</option>
+        <option value=3>Low</option>
+        <option value=2>Medium</option>
+        <option value=1>High</option>
+      </select>
     <button type="submit">{{ buttonText }}</button>
 </form>

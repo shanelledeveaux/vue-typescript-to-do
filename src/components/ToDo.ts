@@ -11,11 +11,11 @@ import Task from '@/types/Task';
   })
 export default class ToDo extends Vue {
     public tasks: Task[] = [
-        { description: 'Make Coffee', completed: false },
-        { description: 'Feed Dragons', completed: false },
+        { description: 'Make Coffee', completed: false, priority: 1 },
+        { description: 'Feed Dragons', completed: false, priority: 3 },
     ];
 
-    public addTask(description: string): void {
-        this.tasks.push({ description, completed: false });
+    public addTask(description: string, priority: number): void {
+        this.tasks.push({ description, completed: false, priority });
     }
 }

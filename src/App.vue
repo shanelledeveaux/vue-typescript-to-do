@@ -28,4 +28,23 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
+li{
+  list-style-type: none;
+}
+
+.to-do-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 45%;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid red;
+}
 </style>
